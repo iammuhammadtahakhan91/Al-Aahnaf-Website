@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #12203A;
+  --color-ink-secondary: #1B2C4D;
+  --color-ink-muted: #243A63;
+  --color-paper: #EDEFEA;
+  --color-paper-secondary: #E3E6DD;
+  --color-paper-line: #C9CDC0;
+  --color-amber: #E8A33D;
+  --color-amber-dark: #C97F1E;
+  --color-green: #3F8F6F;
+  --color-rust: #C4573F;
+  --color-slate: #5B6472;
+  --color-slate-light: #8B93A5;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Source Serif 4", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-paper text-ink antialiased leading-relaxed;
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight font-semibold;
+  }
+}
